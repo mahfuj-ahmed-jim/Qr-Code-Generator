@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".GenerateAcitivity">
+
+    <EditText
+        android:id="@+id/nameEditTextId"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name">
+    </EditText>
+
+    <EditText
+        android:id="@+id/emailEditTextId"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email ID">
+    </EditText>
+
+    <EditText
+        android:id="@+id/institutionEditTextId"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Institution Name">
+    </EditText>
+
+    <EditText
+        android:id="@+id/facebookEditTextId"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/black"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Facebook ID (url)">
+    </EditText>
+
+    <Button
+        android:id="@+id/generteButton"
+        android:layout_marginTop="20dp"
+        android:textSize="12dp"
+        android:text="Generate"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:background="@drawable/solid">
+
+    </Button>
+
+    <ImageView
+        android:id="@+id/qrCodeId"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="307dp"
+        android:layout_height="307dp"></ImageView>
+
+</LinearLayout>

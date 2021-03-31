@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".ScanActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="560dp">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scannerId"
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:layout_gravity="center_horizontal"
+            app:frameAspectRatioHeight="1"
+            app:frameAspectRatioWidth="1"
+            app:frameColor="@color/white"
+            app:frameCornersRadius="0dp"
+            app:frameCornersSize="50dp"
+            app:frameSize="1"
+            app:frameThickness="4dp">
+        </com.budiyev.android.codescanner.CodeScannerView>
+
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/scannerId"
+            android:layout_marginBottom="-45dp"
+            android:text="Name :">
+        </TextView>
+
+        <TextView
+            android:id="@+id/nameTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignBottom="@+id/scannerId"
+            android:layout_marginLeft="73dp"
+            android:layout_marginBottom="-44dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/email"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/name"
+            android:layout_marginBottom="-45dp"
+            android:text="Email :">
+        </TextView>
+
+        <TextView
+            android:id="@+id/emailTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/email"
+            android:layout_alignBottom="@+id/nameTextId"
+            android:layout_marginLeft="68dp"
+            android:layout_marginBottom="-45dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/Institution"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/email"
+            android:layout_marginBottom="-45dp"
+            android:text="Institution :">
+        </TextView>
+
+        <TextView
+            android:id="@+id/InstlTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Institution"
+            android:layout_alignBottom="@+id/emailTextId"
+            android:layout_marginLeft="106dp"
+            android:layout_marginBottom="-44dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp">
+
+        </TextView>
+
+        <TextView
+            android:textIsSelectable="true"
+            android:id="@+id/facebook"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/Institution"
+            android:layout_marginBottom="-45dp"
+            android:text="Facebook ID (url) :">
+        </TextView>
+
+        <TextView
+            android:id="@+id/facebookTextId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/facebook"
+            android:layout_alignBottom="@+id/InstlTextId"
+            android:layout_marginLeft="171dp"
+            android:layout_marginBottom="-45dp"
+            android:textIsSelectable="true"
+            android:textSize="16dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</ScrollView>
